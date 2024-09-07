@@ -1,6 +1,6 @@
 # INEC Polling Unit Data Scraper
 
-This repository contains a Selenium-based web scraper for polling unit data from the [INEC Nigeria Website](https://www.inecnigeria.org/?page_id=2526). The scraper collects polling unit details for **Lagos State** and saves them into a CSV file for easy analysis.
+This repository contains a Selenium-based web scraper for polling unit data from the [INEC Nigeria Website](https://www.inecnigeria.org/?page_id=2526). The scraper collects polling unit details for **Lagos State**(this can be chnaged within the script) and saves them into a CSV file for easy analysis.
 
 ## Features
 
