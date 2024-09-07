@@ -1,6 +1,8 @@
+#python script generates csv file from gathering data 
+#of the polling units in lagos(not subject to this only) can be changed in script
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 import csv 
@@ -26,8 +28,6 @@ try:
             Select2.select_by_visible_text(ward.get_attribute('text'))
             time.sleep(3)
             driver.find_element(By.ID, "SearchPoll").click()
-    # for opt in Select.options:
-    #     print(opt.get_attribute('text'))
             time.sleep(3)
             table = driver.find_element(By.TAG_NAME, "tbody")
             rows = table.find_elements(By.TAG_NAME, "tr")
