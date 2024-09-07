@@ -1,6 +1,7 @@
 #python script generates csv file from gathering data 
 #of the polling units in lagos(not subject to this only) can be changed in script
 
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
@@ -42,8 +43,6 @@ try:
                 table_data['lagos'][lga.get_attribute('text')].append(row_data)
 except:
     pass
-           
-
         
 with open('polling_unit_data.csv', 'w', newline='') as csv_file:
      writer = csv.writer(csv_file)
